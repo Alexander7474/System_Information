@@ -1,6 +1,0 @@
-ALERT|art-Z16|2025-04-25_11-35-54: systemd, pid 1 est en cours d'utilisation;
-ALERT|art-Z16|2025-04-25_11-36-02: systemd, pid 1747 est en cours d'utilisation;
-ALERT|art-Z16|2025-04-25_11-36-04: ssh-agent, pid 3070 est en cours d'utilisation;
-ALERT|art-Z16|2025-04-25_11-36-11: systemd, pid 1 est en cours d'utilisation;
-ALERT|art-Z16|2025-04-25_11-36-18: systemd, pid 1747 est en cours d'utilisation;
-ALERT|art-Z16|2025-04-25_11-36-20: ssh-agent, pid 3070 est en cours d'utilisation;

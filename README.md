@@ -1,6 +1,6 @@
 # System Information
 
-System information est un outils de surveilliance d'un park informatique de machine linux <br> 
+System information est un outils de surveilliance d'un park informatique de machine linux développé en bash et en python <br> 
 
 Il permet: <br>
     -> La génération de graphiques récapitulatif sur l'utilisation hardware/software <br>
@@ -28,12 +28,17 @@ Cette commande doit être ajouter dans les cronjobs root <br>
 L'envoie de mail nécessite un accès ssh vers un server pouvant éxécuter la commande ```mail```. <br> 
 Pour cela il faut installer les clées id_rsa et id_rsa.pub dans un dossier client/.ssh_key <br> 
 
+Les paramètres de détéction de crise peuvent être configurés dans detection_param.json dans le dossier client/json/<br>
+Le mail d'envoie des crise est configuré dans config.json dans le dossier client/json/<br>
+
 ### Installation server
 
 Installation des dépendances: <br> 
 ```sudo apt-get install python3 python3-pygal jq python3-psutils ssh```
 
-Le server se lance avec le script server.sh
+Les ip des machines surveillées par le server doivent être entrées dans config.json dans le dossier server/json/ <br>
+
+Le server se lance avec le script server.sh <br>
 
 ## Utilisation 
 
