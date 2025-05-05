@@ -1,0 +1,86 @@
+{
+  "alert" : {
+    "proc_name": [
+      "nmap",
+      "netcat",
+      "nc",
+      "tcpdump",
+      "wireshark",
+      "aircrack-ng",
+      "hydra",
+      "john",
+      "sqlmap",
+      "burpsuite",
+      "nikto",
+      "zmap",
+      "masscan",
+      "proxychains",
+      "sshd",
+      "sshpass",
+      "socat",
+      "scp",
+      "rsync",
+      "wget",
+      "curl",
+      "lynx",
+      "tor",
+      "ssh",
+      "ssh-agent",
+      "msfvenom"
+    ],
+    "port" : [
+      4444,
+      6666,
+      31337,
+      9050,
+      1080,
+      2121,
+      23,
+      21,
+      111,
+      135,
+      445,
+      6000,
+      5900
+    ],
+    "load_limit": {
+      "cpu": 75,
+      "memory": 75,
+      "disk": 75
+    }
+  },
+  "crisis" : {
+    "proc_name": [
+      "meterpreter",
+      "msfconsole",
+      "reverse_shell",
+      "cryptominer",
+      "xmrig",
+      "payload",
+      "ransomware_sim",
+      "malware",
+      "botnet",
+      "rat",
+      "backdoor",
+      "keylogger",
+      "infostealer",
+      "sliver",
+      "cobaltstrike",
+      "revshell",
+      "evilginx",
+      "empire",
+      "pupy",
+      "beacon",
+      "rootkit",
+      "malicious_bin",
+      "bash_reverse",
+      "curl_payload",
+      "wget_payload"
+    ],
+    "load_limit": {
+      "cpu": 95,
+      "memory": 85,
+      "disk": 85
+    }
+  }
+}

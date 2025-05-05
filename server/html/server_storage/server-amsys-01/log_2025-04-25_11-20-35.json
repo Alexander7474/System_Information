@@ -1,0 +1,1633 @@
+{
+  "sonde_cronjob": [
+    {
+      "username": "root",
+      "command": "cd / && run-parts --report /etc/cron.hourly"
+    },
+    {
+      "username": "root",
+      "command": "test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.daily; }"
+    },
+    {
+      "username": "root",
+      "command": "test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.weekly; }"
+    },
+    {
+      "username": "root",
+      "command": "test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.monthly; }"
+    }
+  ],
+  "sonde_port": [
+    {
+      "port": 22,
+      "service": "systemd",
+      "username": "root"
+    },
+    {
+      "port": 53,
+      "service": "systemd-r",
+      "username": "systemd-resolve"
+    },
+    {
+      "port": 53,
+      "service": "systemd-r",
+      "username": "systemd-resolve"
+    },
+    {
+      "port": 9000,
+      "service": "python3",
+      "username": "root"
+    }
+  ],
+  "sonde_proc": [
+    {
+      "name": "systemd",
+      "cpu_time": [
+        0.82,
+        2.72,
+        3.88,
+        7.73,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.11,
+      "pid": 1,
+      "status": "sleeping"
+    },
+    {
+      "name": "kthreadd",
+      "cpu_time": [
+        0.0,
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.11,
+      "pid": 2,
+      "status": "sleeping"
+    },
+    {
+      "name": "pool_workqueue_release",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.23,
+      "pid": 3,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-rcu_g",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.23,
+      "pid": 4,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-rcu_p",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.23,
+      "pid": 5,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-slub_",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.23,
+      "pid": 6,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-netns",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.23,
+      "pid": 7,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/0:0H-kblockd",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.23,
+      "pid": 10,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-mm_pe",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.23,
+      "pid": 12,
+      "status": "idle"
+    },
+    {
+      "name": "rcu_tasks_kthread",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.24,
+      "pid": 13,
+      "status": "idle"
+    },
+    {
+      "name": "rcu_tasks_rude_kthread",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.24,
+      "pid": 14,
+      "status": "idle"
+    },
+    {
+      "name": "rcu_tasks_trace_kthread",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.24,
+      "pid": 15,
+      "status": "idle"
+    },
+    {
+      "name": "ksoftirqd/0",
+      "cpu_time": [
+        0.0,
+        0.09,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.24,
+      "pid": 16,
+      "status": "sleeping"
+    },
+    {
+      "name": "rcu_preempt",
+      "cpu_time": [
+        0.0,
+        0.22,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.24,
+      "pid": 17,
+      "status": "idle"
+    },
+    {
+      "name": "migration/0",
+      "cpu_time": [
+        0.0,
+        0.02,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.24,
+      "pid": 18,
+      "status": "sleeping"
+    },
+    {
+      "name": "idle_inject/0",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.24,
+      "pid": 19,
+      "status": "sleeping"
+    },
+    {
+      "name": "cpuhp/0",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.25,
+      "pid": 20,
+      "status": "sleeping"
+    },
+    {
+      "name": "cpuhp/1",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.25,
+      "pid": 21,
+      "status": "sleeping"
+    },
+    {
+      "name": "idle_inject/1",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.25,
+      "pid": 22,
+      "status": "sleeping"
+    },
+    {
+      "name": "migration/1",
+      "cpu_time": [
+        0.0,
+        0.27,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.25,
+      "pid": 23,
+      "status": "sleeping"
+    },
+    {
+      "name": "ksoftirqd/1",
+      "cpu_time": [
+        0.02,
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.25,
+      "pid": 24,
+      "status": "sleeping"
+    },
+    {
+      "name": "kdevtmpfs",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.25,
+      "pid": 27,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-inet_",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.26,
+      "pid": 28,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/u4:1-events_unbound",
+      "cpu_time": [
+        0.0,
+        0.73,
+        0.03,
+        0.22,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.26,
+      "pid": 29,
+      "status": "idle"
+    },
+    {
+      "name": "kauditd",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.27,
+      "pid": 30,
+      "status": "sleeping"
+    },
+    {
+      "name": "khungtaskd",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.28,
+      "pid": 31,
+      "status": "sleeping"
+    },
+    {
+      "name": "oom_reaper",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.28,
+      "pid": 32,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/u4:2-events_unbound",
+      "cpu_time": [
+        0.0,
+        0.15,
+        0.0,
+        0.07,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.29,
+      "pid": 33,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-write",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.29,
+      "pid": 34,
+      "status": "idle"
+    },
+    {
+      "name": "kcompactd0",
+      "cpu_time": [
+        0.0,
+        0.06,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.29,
+      "pid": 35,
+      "status": "sleeping"
+    },
+    {
+      "name": "ksmd",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.29,
+      "pid": 36,
+      "status": "sleeping"
+    },
+    {
+      "name": "khugepaged",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.29,
+      "pid": 37,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-kinte",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.29,
+      "pid": 38,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-kbloc",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.3,
+      "pid": 39,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-blkcg",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.3,
+      "pid": 40,
+      "status": "idle"
+    },
+    {
+      "name": "irq/9-acpi",
+      "cpu_time": [
+        0.0,
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.31,
+      "pid": 41,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-tpm_d",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.47,
+      "pid": 43,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-ata_s",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.48,
+      "pid": 44,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-md",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.48,
+      "pid": 45,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-md_bi",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.48,
+      "pid": 46,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-edac-",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.49,
+      "pid": 47,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-devfr",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.49,
+      "pid": 48,
+      "status": "idle"
+    },
+    {
+      "name": "watchdogd",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.5,
+      "pid": 49,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/1:1H-kblockd",
+      "cpu_time": [
+        0.0,
+        0.04,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.76,
+      "pid": 50,
+      "status": "idle"
+    },
+    {
+      "name": "kswapd0",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.79,
+      "pid": 51,
+      "status": "sleeping"
+    },
+    {
+      "name": "ecryptfs-kthread",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.8,
+      "pid": 52,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-kthro",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.88,
+      "pid": 53,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-acpi_",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.89,
+      "pid": 54,
+      "status": "idle"
+    },
+    {
+      "name": "scsi_eh_0",
+      "cpu_time": [
+        0.0,
+        0.01,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.97,
+      "pid": 55,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-scsi_",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578383.98,
+      "pid": 56,
+      "status": "idle"
+    },
+    {
+      "name": "scsi_eh_1",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578384.04,
+      "pid": 57,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-scsi_",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578384.04,
+      "pid": 58,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/u4:3-events_power_efficient",
+      "cpu_time": [
+        0.0,
+        0.18,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578384.04,
+      "pid": 59,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/0:1H-kblockd",
+      "cpu_time": [
+        0.0,
+        0.04,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578384.3,
+      "pid": 62,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-mld",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578384.47,
+      "pid": 64,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-ipv6_",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578384.47,
+      "pid": 65,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-kstrp",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578384.55,
+      "pid": 72,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/u5:0",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578384.65,
+      "pid": 74,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-crypt",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578384.72,
+      "pid": 79,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/1:2-events",
+      "cpu_time": [
+        0.0,
+        0.62,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578384.72,
+      "pid": 80,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-charg",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578384.95,
+      "pid": 89,
+      "status": "idle"
+    },
+    {
+      "name": "scsi_eh_2",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578385.81,
+      "pid": 154,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-scsi_",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578385.82,
+      "pid": 155,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-kdmfl",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578386.36,
+      "pid": 167,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-raid5",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578388.16,
+      "pid": 196,
+      "status": "idle"
+    },
+    {
+      "name": "jbd2/dm-0-8",
+      "cpu_time": [
+        0.0,
+        0.03,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578389.07,
+      "pid": 238,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-ext4-",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578389.07,
+      "pid": 239,
+      "status": "idle"
+    },
+    {
+      "name": "systemd-journald",
+      "cpu_time": [
+        0.22,
+        0.37,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578390.31,
+      "pid": 306,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-kmpat",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578391.53,
+      "pid": 330,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/R-kmpat",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578391.53,
+      "pid": 331,
+      "status": "idle"
+    },
+    {
+      "name": "multipathd",
+      "cpu_time": [
+        0.27,
+        0.24,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578392.19,
+      "pid": 361,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/0:3-events",
+      "cpu_time": [
+        0.0,
+        1.49,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578392.29,
+      "pid": 362,
+      "status": "idle"
+    },
+    {
+      "name": "systemd-udevd",
+      "cpu_time": [
+        0.24,
+        0.56,
+        0.77,
+        1.87,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578392.49,
+      "pid": 368,
+      "status": "sleeping"
+    },
+    {
+      "name": "psimon",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578392.82,
+      "pid": 381,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/1:2H-kblockd",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578393.07,
+      "pid": 428,
+      "status": "idle"
+    },
+    {
+      "name": "jbd2/sda2-8",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578393.54,
+      "pid": 479,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-ext4-",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578393.54,
+      "pid": 480,
+      "status": "idle"
+    },
+    {
+      "name": "systemd-networkd",
+      "cpu_time": [
+        0.03,
+        0.03,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578394.29,
+      "pid": 543,
+      "status": "sleeping"
+    },
+    {
+      "name": "irq/18-vmwgfx",
+      "cpu_time": [
+        0.0,
+        0.04,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578394.36,
+      "pid": 565,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-ttm",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578394.36,
+      "pid": 566,
+      "status": "idle"
+    },
+    {
+      "name": "systemd-resolved",
+      "cpu_time": [
+        0.07,
+        0.08,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578394.39,
+      "pid": 573,
+      "status": "sleeping"
+    },
+    {
+      "name": "systemd-timesyncd",
+      "cpu_time": [
+        0.03,
+        0.04,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578394.41,
+      "pid": 578,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-cfg80",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578394.53,
+      "pid": 617,
+      "status": "idle"
+    },
+    {
+      "name": "dbus-daemon",
+      "cpu_time": [
+        0.05,
+        0.03,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578394.86,
+      "pid": 691,
+      "status": "sleeping"
+    },
+    {
+      "name": "polkitd",
+      "cpu_time": [
+        0.06,
+        0.07,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578394.91,
+      "pid": 697,
+      "status": "sleeping"
+    },
+    {
+      "name": "systemd-logind",
+      "cpu_time": [
+        0.04,
+        0.03,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578394.99,
+      "pid": 705,
+      "status": "sleeping"
+    },
+    {
+      "name": "udisksd",
+      "cpu_time": [
+        0.05,
+        0.08,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578395.01,
+      "pid": 714,
+      "status": "sleeping"
+    },
+    {
+      "name": "unattended-upgr",
+      "cpu_time": [
+        0.11,
+        0.05,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578395.15,
+      "pid": 726,
+      "status": "sleeping"
+    },
+    {
+      "name": "rsyslogd",
+      "cpu_time": [
+        0.03,
+        0.03,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578395.18,
+      "pid": 730,
+      "status": "sleeping"
+    },
+    {
+      "name": "ModemManager",
+      "cpu_time": [
+        0.03,
+        0.07,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578395.31,
+      "pid": 762,
+      "status": "sleeping"
+    },
+    {
+      "name": "cron",
+      "cpu_time": [
+        0.0,
+        0.01,
+        3.24,
+        3.96,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578395.76,
+      "pid": 824,
+      "status": "sleeping"
+    },
+    {
+      "name": "login",
+      "cpu_time": [
+        0.01,
+        0.02,
+        0.51,
+        0.31,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578395.92,
+      "pid": 841,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/R-iprt-",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578395.93,
+      "pid": 842,
+      "status": "idle"
+    },
+    {
+      "name": "iprt-VBoxTscThread",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578395.94,
+      "pid": 843,
+      "status": "sleeping"
+    },
+    {
+      "name": "psimon",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578413.6,
+      "pid": 973,
+      "status": "sleeping"
+    },
+    {
+      "name": "systemd",
+      "cpu_time": [
+        0.15,
+        0.05,
+        0.01,
+        0.03,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578413.62,
+      "pid": 975,
+      "status": "sleeping"
+    },
+    {
+      "name": "(sd-pam)",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578413.64,
+      "pid": 976,
+      "status": "sleeping"
+    },
+    {
+      "name": "bash",
+      "cpu_time": [
+        0.06,
+        0.08,
+        0.82,
+        1.36,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578413.95,
+      "pid": 987,
+      "status": "sleeping"
+    },
+    {
+      "name": "openvpn",
+      "cpu_time": [
+        0.06,
+        0.05,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578453.37,
+      "pid": 1017,
+      "status": "sleeping"
+    },
+    {
+      "name": "python3",
+      "cpu_time": [
+        0.72,
+        0.62,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578486.84,
+      "pid": 3096,
+      "status": "sleeping"
+    },
+    {
+      "name": "kworker/u4:5-events_unbound",
+      "cpu_time": [
+        0.0,
+        0.04,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578726.94,
+      "pid": 3373,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/0:0-cgroup_destroy",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745578800.97,
+      "pid": 3567,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/1:1-events",
+      "cpu_time": [
+        0.0,
+        0.03,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745579402.64,
+      "pid": 5389,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/u4:0",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745579738.19,
+      "pid": 6668,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/u4:4-events_power_efficient",
+      "cpu_time": [
+        0.0,
+        0.02,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745579738.19,
+      "pid": 6669,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/1:0",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745579918.01,
+      "pid": 6720,
+      "status": "idle"
+    },
+    {
+      "name": "kworker/0:1",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745580004.36,
+      "pid": 6763,
+      "status": "idle"
+    },
+    {
+      "name": "sudo",
+      "cpu_time": [
+        0.01,
+        0.02,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745580032.71,
+      "pid": 6768,
+      "status": "sleeping"
+    },
+    {
+      "name": "sudo",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745580035.28,
+      "pid": 6769,
+      "status": "sleeping"
+    },
+    {
+      "name": "main.sh",
+      "cpu_time": [
+        0.0,
+        0.0,
+        0.05,
+        0.1,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745580035.28,
+      "pid": 6770,
+      "status": "sleeping"
+    },
+    {
+      "name": "python3",
+      "cpu_time": [
+        0.07,
+        0.03,
+        0.0,
+        0.01,
+        0.0
+      ],
+      "cpu_percent": 0.0,
+      "create_time": 1745580035.46,
+      "pid": 6870,
+      "status": "running"
+    }
+  ],
+  "sonde_sys": {
+    "cpu": {
+      "arch": "x86_64",
+      "model": "",
+      "usage_percent": 0.0,
+      "num_cores": 2
+    },
+    "memory": {
+      "total": 2063446016,
+      "available": 1714495488,
+      "used": 195014656,
+      "percent": 16.9
+    },
+    "disk": {
+      "total": 12040970240,
+      "used": 4202348544,
+      "free": 7204655104,
+      "percent": 36.8
+    },
+    "network": {
+      "bytes_sent": 15857822,
+      "bytes_recv": 1011536,
+      "packets_sent": 15869,
+      "packets_recv": 8419
+    }
+  },
+  "sonde_user": [
+    {
+      "username": "artyom",
+      "tty": "tty1",
+      "from": "-",
+      "login_time": "10:53",
+      "command": "sudo ./main.sh"
+    }
+  ]
+}

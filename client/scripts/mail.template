@@ -1,0 +1,20 @@
+De : uapv2401246@pedago01c.univ-avignon.fr\n
+À : alexandre.lanternier@alumni.univ-avignon.fr\n
+Objet : Alerte crise – [crisis_type] sur [server_name]\n
+\n
+Bonjour,\n
+\n
+Une situation critique a été détectée par [app_name].\n
+\n
+Détails: \n
+- Type        : [crisis_type] \n
+- Serveur     : [server_name] \n
+- Date_Heure  : [time] \n
+- Gravité     : Critique \n
+- Message     : [message] \n
+\n
+Merci de prendre des mesures dès que possible. \n
+\n
+---\n
+Ceci est un message automatique généré par [app_name].\n
+Ne pas répondre directement à cet email.
